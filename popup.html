@@ -1,11 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>GTmetrix Analyzer</title>
+    <title>IP ANALYZER</title>
     <script src="popup.js"></script>
   </head>
-  <body>
-    <h1>GTmetrix Analyzer</h1>
-    <button id="checkPage">Check this page now!</button>
+  <body bgcolor="#270846">
+    <h1 style="color: azure; display: inline;">IP ANALYZER</h1>
   </body>
+  <form action="/IP_Analyzer.html" method="post" target="_blank">
+    <textarea name="comments" id="usrform" value="Input the IP's to lookup" onclick="this.value=''" style="width:150px;height:150px;background-color:rgb(151, 93, 218)85;color:rgb(0, 0, 0);border:none;padding:none;font:12px/20px sans-serif;" onBlur="if(this.value == '') {this.value = 'Search here ...'}">
+    </textarea>
+    <input type="submit" value="Submit" style="background-color:rgba(108, 38, 187, 0.5);color:azure;padding:5px;font-size:18px;border:none;padding:5px;">
+    </form>
 </html>
